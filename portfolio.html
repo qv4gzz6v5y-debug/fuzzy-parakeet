@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>내 포트폴리오</title>
-</head>
 <body>
+<nav>
+  <a href="index.html">홈</a>
+</nav>
 
-<h2>내 작품</h2>
+<div class="container">
+  <h2>내 포트폴리오</h2>
 
-<button onclick="loadMy('all')">전체</button>
-<button onclick="loadMy('video')">영상</button>
-<button onclick="loadMy('image')">이미지</button>
+  <div class="filter">
+    <button onclick="loadMy('all')">전체</button>
+    <button onclick="loadMy('video')">영상</button>
+    <button onclick="loadMy('image')">이미지</button>
+  </div>
 
-<div id="items"></div>
+  <div id="items" class="grid"></div>
+</div>
 
 <script type="module" src="app.js"></script>
 </body>
-</html>

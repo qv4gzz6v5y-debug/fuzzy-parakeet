@@ -5,13 +5,18 @@
   <title>로그인</title>
 </head>
 <body>
+<nav>
+  <a href="index.html">홈</a>
+</nav>
 
-<h2>로그인</h2>
-
-<input type="text" id="username" placeholder="아이디"><br>
-<input type="password" id="password" placeholder="비밀번호"><br>
-
-<button onclick="login()">로그인</button>
+<div class="container">
+  <div class="form-box">
+    <h2>로그인</h2>
+    <input type="text" id="username" placeholder="아이디">
+    <input type="password" id="password" placeholder="비밀번호">
+    <button onclick="login()">로그인</button>
+  </div>
+</div>
 
 <script type="module" src="app.js"></script>
 </body>

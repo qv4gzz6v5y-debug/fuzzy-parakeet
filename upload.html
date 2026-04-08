@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>업로드</title>
-</head>
 <body>
+<nav>
+  <a href="index.html">홈</a>
+</nav>
 
-<h2>파일 업로드</h2>
+<div class="container">
+  <div class="form-box">
+    <h2>업로드</h2>
 
-<input type="file" id="file"><br>
+    <input type="file" id="file">
 
-<select id="type">
-  <option value="video">영상</option>
-  <option value="image">이미지</option>
-</select>
+    <select id="type">
+      <option value="video">영상</option>
+      <option value="image">이미지</option>
+    </select>
 
-<button onclick="uploadFile()">업로드</button>
+    <button onclick="uploadFile()">업로드</button>
+  </div>
+</div>
 
 <script type="module" src="app.js"></script>
 </body>
-</html>
