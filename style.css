@@ -1,0 +1,12 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+.item {
+  margin: 10px;
+}
