@@ -1,22 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>작품 업로드</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<nav>
-  <a href="index.html">홈</a>
-</nav>
-
-<div class="container">
-  <div class="form-box">
-    <h2>업로드</h2>
-
-    <input type="file" id="file">
-
-    <select id="type">
+  <h2>작품 업로드</h2>
+  <form id="upload-form">
+    <input id="work-url" placeholder="GitHub/YouTube URL" required />
+    <select id="work-type">
       <option value="video">영상</option>
       <option value="image">이미지</option>
     </select>
-
-    <button onclick="uploadFile()">업로드</button>
-  </div>
-</div>
-
-<script type="module" src="app.js"></script>
+    <button type="submit">업로드</button>
+  </form>
+  <script type="module" src="js/app.js"></script>
 </body>
+</html>

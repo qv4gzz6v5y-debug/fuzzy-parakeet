@@ -2,24 +2,17 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>포트폴리오 홈</title>
-  <link rel="stylesheet" href="style.css">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-  <a href="index.html">홈</a>
-</nav>
-
-<div class="container">
-  <div class="form-box">
-    <h2>회원가입</h2>
-    <input type="email" id="email" placeholder="이메일">
-    <input type="text" id="username" placeholder="아이디">
-    <input type="password" id="password" placeholder="비밀번호">
-    <button onclick="signUp()">회원가입</button>
-  </div>
-</div>
-
-<script type="module" src="app.js"></script>
+  <h2>회원가입</h2>
+  <form id="signup-form">
+    <input id="signup-email" type="email" placeholder="이메일" required />
+    <input id="signup-username" placeholder="아이디" required />
+    <input id="signup-password" type="password" placeholder="비밀번호 (6자리 이상)" required />
+    <button type="submit">회원가입</button>
+  </form>
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
