@@ -11,14 +11,12 @@ body {
   padding: 20px;
 }
 
-/* 제목 */
 h1, h2 {
   margin-bottom: 20px;
-  color: #28a745; /* 초록색 */
+  color: #28a745;
   text-align: center;
 }
 
-/* 네비게이션 */
 nav {
   display: flex;
   justify-content: center;
@@ -40,7 +38,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* 폼 */
 form {
   background: #fff;
   padding: 25px;
@@ -51,9 +48,7 @@ form {
   transition: 0.3s;
 }
 
-form:hover {
-  transform: translateY(-3px);
-}
+form:hover { transform: translateY(-3px); }
 
 form input,
 form select,
@@ -69,10 +64,7 @@ form button {
 }
 
 form input:focus,
-form select:focus {
-  border-color: #28a745;
-  outline: none;
-}
+form select:focus { border-color: #28a745; outline: none; }
 
 form button {
   background: linear-gradient(45deg, #28a745, #007bff);
@@ -87,7 +79,6 @@ form button:hover {
   background: linear-gradient(45deg, #007bff, #28a745);
 }
 
-/* 작품 필터 */
 #filter-type {
   display: block;
   margin: 0 auto 20px auto;
@@ -97,7 +88,6 @@ form button:hover {
   border: 1px solid #ccc;
 }
 
-/* 작품 리스트 */
 #works-list {
   display: flex;
   flex-wrap: wrap;
@@ -127,20 +117,8 @@ form button:hover {
   margin-top: 10px;
 }
 
-/* 반응형 */
 @media (max-width: 768px) {
-  #works-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  form {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
+  #works-list { flex-direction: column; align-items: center; }
+  form { width: 90%; margin: 20px auto; }
+  nav { flex-direction: column; gap: 15px; }
 }

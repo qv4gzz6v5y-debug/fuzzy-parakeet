@@ -1,15 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.1/firebase-auth.js";
-import { getFirestore, collection, addDoc, doc, setDoc, query, where, getDocs, orderBy } from "https://www.gstatic.com/firebasejs/10.6.1/firebase-firestore.js";
+import { getFirestore, collection, addDoc, doc, setDoc, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.6.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBqbVFcT-DaeKACTvcbrnRCL1X-aQho64k",
+  authDomain: "portfolio-df22c.firebaseapp.com",
+  projectId: "portfolio-df22c",
+  storageBucket: "portfolio-df22c.firebasestorage.app",
+  messagingSenderId: "794971691409",
+  appId: "1:794971691409:web:617edd7c2f28396e516230"
 };
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
