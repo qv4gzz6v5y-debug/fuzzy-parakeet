@@ -1,0 +1,111 @@
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* 네비게이션 */
+nav {
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 폼 스타일 */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* 작품 리스트 */
+#works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#works-list div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  max-width: 320px;
+}
+
+#works-list img,
+#works-list video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* 필터 */
+#filter-type {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  #works-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    width: 90%;
+    margin: auto;
+  }
+}
