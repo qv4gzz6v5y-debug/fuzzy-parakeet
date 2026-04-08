@@ -4,10 +4,10 @@ import { getFirestore, setDoc, doc, addDoc, collection, getDocs } from "https://
 import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_ID",
-  storageBucket: "YOUR_BUCKET"
+  apiKey: "AIzaSyBqbVFcT-DaeKACTvcbrnRCL1X-aQho64k",
+  authDomain: "portfolio-df22c.firebaseapp.com",
+  projectId: "portfolio-df22c",
+  storageBucket: "portfolio-df22c.firebasestorage.app"
 };
 
 const app = initializeApp(firebaseConfig);
